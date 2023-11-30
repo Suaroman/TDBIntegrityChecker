@@ -2,12 +2,13 @@
 
 This script is a utility for checking the integrity of Winbind TDB (Trivial Database) files on a system. It lists all currently open `.tdb` files, checks their integrity using `tdbtool`, and presents the results in a formatted table with the file name, status, and the record count.
 
-## Installation
+## Download and Run
 
-To use this script, clone the repository or copy the script contents into a new file on your local machine.
+To use the TDB Integrity Checker script, you can download it directly from the repository using `wget` with the following command:
 
 ```bash
-git clone https://github.com/your-username/tdb-integrity-checker.git
+wget https://raw.githubusercontent.com/Suaroman/TDBIntegrityChecker/master/tdb-integrity-check.sh
+chmod +x tdb-integrity-check.sh
 ```
 
 HDInsight ESP clusters have `tdbtool` already installed.
@@ -17,7 +18,7 @@ HDInsight ESP clusters have `tdbtool` already installed.
 To run the script, navigate to the directory where the script is located and run:
 
 ```bash
-bash tdb-integrity-check.sh
+./tdb-integrity-check.sh
 ```
 
 The output will be displayed in a neatly formatted table directly in your terminal.
